@@ -1,0 +1,1 @@
+.chess-clock{display:flex;align-items:center;justify-content:space-evenly;height:100vh}.clock,.clock button{width:100%;height:100%}.clock button{font-size:8em;border:none;background:0 0}.chess-clock.white{background-color:#fff}.chess-clock.white button{color:#000}.chess-clock.black{background-color:#000}.chess-clock.black button{color:#fff}
