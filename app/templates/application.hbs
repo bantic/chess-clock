@@ -1,5 +1,7 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
-
-{{outlet}}
+<ChessClock @minutes={{10}} />
+{{!-- {{#if this.gameStarted}}
+  <ChessClock @minutes={{this.minutes}} />
+{{else}}
+  Minutes: <Input type='number' @value={{this.minutes}} />
+  <button {{on 'click' (fn (mut this.gameStarted) true)}} type='submit'>Start</button>
+{{/if}} --}}

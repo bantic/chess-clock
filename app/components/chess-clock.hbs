@@ -1,0 +1,12 @@
+<div class="chess-clock {{if this.isWhiteTurn "white"}} {{if this.isBlackTurn "black"}}">
+  <div class="white clock">
+    <button type="button" {{on "click" (fn this.toggleClock "white")}} disabled={{not this.isWhiteTurn}}>
+      {{format-ms this.timeRemainingWhite "mm:ss"}}
+    </button>
+  </div>
+  <div class="black clock">
+    <button type="button" {{on "click" (fn this.toggleClock "black")}} disabled={{not this.isBlackTurn}}>
+      {{format-ms this.timeRemainingBlack "mm:ss"}}
+    </button>
+  </div>
+</div>
